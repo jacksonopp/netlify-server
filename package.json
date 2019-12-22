@@ -1,0 +1,21 @@
+{
+   "name": "netlify-server",
+   "version": "1.0.0",
+   "main": "server-local.js",
+   "repository": "git@github.com:jacksonopp/netlify-server.git",
+   "author": "Jackson Oppenheim <jacksonopp@gmail.com>",
+   "license": "MIT",
+   "dependencies": {
+      "body-parser": "^1.19.0",
+      "express": "^4.17.1",
+      "netlify-lambda": "^1.6.3",
+      "serverless-http": "^2.3.0"
+   },
+   "devDependencies": {
+      "nodemon": "^2.0.2"
+   },
+   "scripts": {
+      "start": "nodemon server-local.js",
+      "build": "netlify-lambda build express"
+   }
+}
